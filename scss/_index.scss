@@ -1,0 +1,88 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.h1 {
+    font-size: 80px;
+    line-height: 106px;
+}
+
+.h2 {
+    font-size: 64px;
+    line-height: 84px;
+    margin-top: 56px;
+}
+
+.h3 {
+    margin-top: 12px;
+    font-size: 24px;
+}
+
+.h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.banner {
+    height: 958px;
+    background:url(/images/banner.png) center;
+}
+
+.about {
+    &__line {
+        width: 384px;
+        border-top: 1px solid #000;
+    }
+    &__workList {
+        margin-top: 28px;
+        li {
+            display: inline;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 22px;
+                height: 22px;
+                background: #891818;
+                left: -16px;
+                transform: translate(-100%, 50%);
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+.brand {
+    &__intro {
+        margin-bottom: 68px;
+    }
+    &__items {
+        margin-bottom: 160px;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+}
+
+.card {
+    &__img {
+        display: block;
+        margin-bottom: 16px;
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 42px;
+        text-align: center;
+    }
+}
+
+.contact {
+    margin-top: 96px;
+    .h2 {
+        margin-top: 64px;
+    }
+}

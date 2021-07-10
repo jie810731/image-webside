@@ -3,6 +3,11 @@
     margin: 0 auto;
 }
 
+.banner {
+    background: url(/images/banner.png) center/cover;
+    height: 958px;
+}
+
 .h1 {
     font-size: 80px;
     line-height: 106px;
@@ -11,78 +16,64 @@
 .h2 {
     font-size: 64px;
     line-height: 84px;
-    margin-top: 56px;
-}
-
-.h3 {
-    margin-top: 12px;
-    font-size: 24px;
-}
-
-.h4 {
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.banner {
-    height: 958px;
-    background:url(/images/banner.png) center;
 }
 
 .about {
-    &__line {
-        width: 384px;
-        border-top: 1px solid #000;
-    }
-    &__workList {
-        margin-top: 28px;
+    padding: 56px 0 28px 0;
+    &__titleList {
+        margin-bottom: 56px;
         li {
-            display: inline;
-            position: relative;
+            margin-bottom: 28px;
             &::before {
-                position: absolute;
-                content: "";
-                width: 22px;
+                content: '';
+                display: inline-block;
                 height: 22px;
+                width: 22px;
                 background: #891818;
-                left: -16px;
-                transform: translate(-100%, 50%);
                 border-radius: 100%;
+                margin-right: 16px;
+                vertical-align: middle;
             }
         }
+    }
+    &__photo {
+        margin-bottom: 20px;
+    }
+    &__line {
+        width: 384px;
+        height: 1px;
+        background: #000;
+        margin: 0 auto 28px;
     }
 }
 
 .brand {
-    &__intro {
-        margin-bottom: 68px;
-    }
-    &__items {
-        margin-bottom: 160px;
-    }
+    padding: 56px 0 160px 0;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 48px;
-}
-
-.card {
-    &__img {
-        display: block;
-        margin-bottom: 16px;
-    }
-    &__title {
-        font-size: 20px;
-        line-height: 42px;
-        text-align: center;
-    }
+.work {
+    padding: 56px 0 96px 0;
 }
 
 .contact {
-    margin-top: 96px;
-    .h2 {
-        margin-top: 64px;
+    padding: 64px 0;
+}
+
+.card {
+    margin-bottom: 48px;
+    &__photo {
+        margin-bottom: 16px;
     }
+    &__body {
+        font-size: 20px;
+        line-height: 42px;
+    }
+}
+
+.p-mb-68 {
+    margin-bottom: 68px;
+}
+
+.p-mb-12 {
+    margin-bottom: 12px;
 }

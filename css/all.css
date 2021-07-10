@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +88,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,16 +106,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -58,10 +139,10 @@ table {
 }
 
 body {
+  font-family: Roboto;
   font-size: 24px;
-  line-height: 1.75;
+  line-height: 1.5;
   font-style: italic;
-  font-family: Roboto, sans-serif;
 }
 
 img {
@@ -73,42 +154,6 @@ a {
   text-decoration: none;
 }
 
-.mb-1 {
-  margin-bottom: 8px !important;
-}
-
-.mb-2 {
-  margin-bottom: 16px !important;
-}
-
-.mb-3 {
-  margin-bottom: 24px !important;
-}
-
-.mb-4 {
-  margin-bottom: 32px !important;
-}
-
-.mb-5 {
-  margin-bottom: 40px !important;
-}
-
-.mb-6 {
-  margin-bottom: 48px !important;
-}
-
-.mb-7 {
-  margin-bottom: 56px !important;
-}
-
-.mb-8 {
-  margin-bottom: 64px !important;
-}
-
-.mb-9 {
-  margin-bottom: 72px !important;
-}
-
 .ai-c {
   align-items: center;
 }
@@ -118,11 +163,7 @@ a {
 }
 
 .c-white {
-  color: #FFFFFF;
-}
-
-.d-b {
-  display: block;
+  color: white;
 }
 
 .d-f {
@@ -133,29 +174,62 @@ a {
   font-weight: bold;
 }
 
-.fxd-c {
-  flex-direction: column;
-}
-
-.jc-c {
-  justify-content: center;
+.fxw-w {
+  flex-wrap: wrap;
 }
 
 .jc-sb {
   justify-content: space-between;
 }
 
-.lh-15 {
-  line-height: 1.5;
+.lh-large {
+  line-height: 1.75;
+}
+
+.lh-small {
+  line-height: 30px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+.mb-7 {
+  margin-bottom: 56px;
 }
 
 .ta-c {
   text-align: center;
 }
 
+.jc-c {
+  justify-content: center;
+}
+
+.fz-small {
+  font-size: 20px;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.banner {
+  background: url(/images/banner.png) center/cover;
+  height: 958px;
 }
 
 .h1 {
@@ -166,79 +240,72 @@ a {
 .h2 {
   font-size: 64px;
   line-height: 84px;
-  margin-top: 56px;
 }
 
-.h3 {
-  margin-top: 12px;
-  font-size: 24px;
+.about {
+  padding: 56px 0 28px 0;
 }
 
-.h4 {
-  font-size: 20px;
-  line-height: 30px;
+.about__titleList {
+  margin-bottom: 56px;
 }
 
-.banner {
-  height: 958px;
-  background: url(/images/banner.png) center;
+.about__titleList li {
+  margin-bottom: 28px;
+}
+
+.about__titleList li::before {
+  content: '';
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  background: #891818;
+  border-radius: 100%;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.about__photo {
+  margin-bottom: 20px;
 }
 
 .about__line {
   width: 384px;
-  border-top: 1px solid #000;
+  height: 1px;
+  background: #000;
+  margin: 0 auto 28px;
 }
 
-.about__workList {
-  margin-top: 28px;
+.brand {
+  padding: 56px 0 160px 0;
 }
 
-.about__workList li {
-  display: inline;
-  position: relative;
-}
-
-.about__workList li::before {
-  position: absolute;
-  content: "";
-  width: 22px;
-  height: 22px;
-  background: #891818;
-  left: -16px;
-  transform: translate(-100%, 50%);
-  border-radius: 100%;
-}
-
-.brand__intro {
-  margin-bottom: 68px;
-}
-
-.brand__items {
-  margin-bottom: 160px;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 48px;
-}
-
-.card__img {
-  display: block;
-  margin-bottom: 16px;
-}
-
-.card__title {
-  font-size: 20px;
-  line-height: 42px;
-  text-align: center;
+.work {
+  padding: 56px 0 96px 0;
 }
 
 .contact {
-  margin-top: 96px;
+  padding: 64px 0;
 }
 
-.contact .h2 {
-  margin-top: 64px;
+.card {
+  margin-bottom: 48px;
+}
+
+.card__photo {
+  margin-bottom: 16px;
+}
+
+.card__body {
+  font-size: 20px;
+  line-height: 42px;
+}
+
+.p-mb-68 {
+  margin-bottom: 68px;
+}
+
+.p-mb-12 {
+  margin-bottom: 12px;
 }
 /*# sourceMappingURL=all.css.map */

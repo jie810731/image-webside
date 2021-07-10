@@ -1,9 +1,3 @@
-@for $i from 1 to 10 {
-    .mb-#{$i} {
-        margin-bottom: #{$i*8}px !important;
-    }
-}
-
 .ai-c {
     align-items: center;
 }
@@ -13,11 +7,7 @@
 }
 
 .c-white {
-    color: #FFFFFF;
-}
-
-.d-b {
-    display: block;
+    color: white;
 }
 
 .d-f {
@@ -28,22 +18,50 @@
     font-weight: bold;
 }
 
-.fxd-c {
-    flex-direction: column;
-}
-
-.jc-c {
-    justify-content: center;
+.fxw-w {
+    flex-wrap: wrap;
 }
 
 .jc-sb {
     justify-content: space-between;
 }
 
-.lh-15 {
-    line-height: 1.5;
+.lh-large {
+    line-height: 1.75;
+}
+
+.lh-small {
+    line-height: 30px;
+}
+
+.mb-2 {
+    margin-bottom: 16px;
+}
+
+.mb-3 {
+    margin-bottom: 24px;
+}
+
+.mb-4 {
+    margin-bottom: 32px;
+}
+
+.mb-5 {
+    margin-bottom: 40px;
+}
+
+.mb-7 {
+    margin-bottom: 56px;
 }
 
 .ta-c {
     text-align: center;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.fz-small {
+    font-size: 20px;
 }

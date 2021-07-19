@@ -222,16 +222,6 @@ a {
   font-size: 20px;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.banner {
-  background: url(https://jie810731.github.io/image-webside/images/banner.png) center/cover;
-  height: 958px;
-}
-
 .h1 {
   font-size: 80px;
   line-height: 106px;
@@ -242,6 +232,16 @@ a {
   line-height: 84px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  background: url(https://jie810731.github.io/image-webside/images/banner.png) center/cover;
+  height: 958px;
+}
+
 .about {
   padding: 56px 0 28px 0;
 }
@@ -250,11 +250,11 @@ a {
   margin-bottom: 56px;
 }
 
-.about__titleList li {
+.about__titleList__item {
   margin-bottom: 28px;
 }
 
-.about__titleList li::before {
+.about__titleList__item::before {
   content: '';
   display: inline-block;
   height: 22px;

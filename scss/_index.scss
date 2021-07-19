@@ -8,21 +8,11 @@
     height: 958px;
 }
 
-.h1 {
-    font-size: 80px;
-    line-height: 106px;
-}
-
-.h2 {
-    font-size: 64px;
-    line-height: 84px;
-}
-
 .about {
     padding: 56px 0 28px 0;
     &__titleList {
         margin-bottom: 56px;
-        li {
+        &__item {
             margin-bottom: 28px;
             &::before {
                 content: '';
